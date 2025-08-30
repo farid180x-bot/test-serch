@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <!-- أساسي -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>صفحة تجربة الفهرسة | موقع تجريبي</title>
+  <meta name="description" content="هذه صفحة HTML تجريبية مُحسّنة للأرشفة في جوجل، تحتوي على عناصر SEO وبيانات منظَّمة وأسئلة شائعة لاختبار الظهور في النتائج الغنية." />
+  <link rel="canonical" href="https://example.com/" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- تحسينات المشاركة الاجتماعية -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:title" content="صفحة تجربة الفهرسة | موقع تجريبي" />
+  <meta property="og:description" content="صفحة HTML تجريبية مُحسّنة للأرشفة في جوجل مع بيانات منظَّمة وأسئلة شائعة." />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:image" content="https://example.com/og-image.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="صفحة تجربة الفهرسة | موقع تجريبي" />
+  <meta name="twitter:description" content="صفحة HTML تجريبية مُحسّنة للأرشفة في جوجل." />
+  <meta name="twitter:image" content="https://example.com/og-image.jpg" />
+
+  <!-- تحسين الأداء البسيط -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- أنماط بسيطة داخلية -->
+  <style>
+    :root { --bg:#0b1020; --card:#111936; --text:#f5f7ff; --muted:#a8b3cf; --accent:#6ee7b7; }
+    *{ box-sizing:border-box }
+    body{ margin:0; font-family:"Tajawal", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:var(--text); line-height:1.8 }
+    header{ padding:2rem 1rem; text-align:center }
+    .container{ max-width:860px; margin:0 auto; padding:0 1rem 4rem }
+    .card{ background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border:1px solid rgba(255,255,255,0.08); box-shadow:0 8px 30px rgba(0,0,0,0.25); border-radius:20px; padding:1.5rem; margin:1rem 0 }
+    h1{ font-size:clamp(1.6rem, 3vw, 2.2rem); margin:0 0 .5rem; letter-spacing:.2px }
+    h2{ font-size:1.25rem; margin:1.5rem 0 .5rem }
+    p{ color:var(--muted); margin:.5rem 0 }
+    a{ color:var(--accent); text-decoration:none }
+    a:hover{ text-decoration:underline }
+    .badge{ display:inline-block; background:rgba(110,231,183,.15); color:var(--accent); border:1px solid rgba(110,231,183,.5); padding:.25rem .6rem; border-radius:999px; font-size:.85rem }
+    .hero{ display:grid; gap:1rem; align-items:center }
+    .hero img{ width:100%; border-radius:16px; border:1px solid rgba(255,255,255,.08) }
+    .grid{ display:grid; gap:1rem; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)) }
+    .faq details{ background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08); border-radius:14px; padding:1rem; margin:.75rem 0 }
+    footer{ text-align:center; color:var(--muted); padding:2rem 1rem }
+    nav.breadcrumb{ font-size:.95rem; margin-top:.5rem }
+    nav.breadcrumb a{ color:#c7d2fe }
+  </style>
+
+  <!-- بيانات منظَّمة: WebSite + WebPage + Breadcrumb + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://example.com/",
+    "name": "موقع تجريبي",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://example.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url": "https://example.com/",
+    "name": "صفحة تجربة الفهرسة",
+    "inLanguage": "ar",
+    "datePublished": "2025-08-30",
+    "dateModified": "2025-08-30",
+    "description": "صفحة HTML تجريبية مُحسّنة للأرشفة في جوجل، مع عناصر SEO وبيانات منظَّمة وأسئلة شائعة.",
+    "breadcrumb": {"@id": "https://example.com/#breadcrumb"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://example.com/#breadcrumb",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://example.com/"},
+      {"@type": "ListItem", "position": 2, "name": "صفحة تجربة الفهرسة", "item": "https://example.com/test"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "ما الهدف من هذه الصفحة؟",
+        "acceptedAnswer": {"@type": "Answer", "text": "الغرض هو اختبار فهرسة جوجل والنتائج الغنية باستخدام صفحة بسيطة وصحيحة تقنياً."}
+      },
+      {
+        "@type": "Question",
+        "name": "هل يمكن إعادة استخدام هذا القالب؟",
+        "acceptedAnswer": {"@type": "Answer", "text": "نعم، غيّر العنوان والوصف وعناوين الأقسام وروابط الصور إلى نطاقك الفعلي ثم ارفع الملف باسم index.html."}
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="container">
+    <span class="badge">نسخة تجريبية</span>
+    <h1>صفحة تجربة الفهرسة</h1>
+    <p>قالب HTML بسيط ومُحسّن لمحركات البحث (SEO) لتجربة الأرشفة والظهور في جوجل.</p>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="#">الرئيسية</a> › <span aria-current="page">صفحة تجربة الفهرسة</span>
+    </nav>
+  </header>
+
+  <main class="container" id="main-content">
+    <section class="card hero">
+      <div>
+        <h2>عن هذه الصفحة</h2>
+        <p>تتضمن هذه الصفحة عناصر مهمة مثل العنوان، الوصف، الوسوم الاجتماعية، والبيانات المنظَّمة (Schema.org) بما فيها <strong>FAQ</strong> لتجربة النتائج الغنية. غيّر الروابط إلى نطاقك الفعلي قبل النشر.</p>
+        <ul>
+          <li>مسار عناوين صحيحة H1 → H2 → H3</li>
+          <li>نص بديل للصور</li>
+          <li>تحسين سرعة بسيط وخط ويب</li>
+        </ul>
+      </div>
+      <div>
+        <img loading="lazy" src="https://via.placeholder.com/1200x675.png?text=OG+Image+Preview" alt="صورة معاينة توضح شكل الصفحة عند المشاركة" width="1200" height="675" />
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card" id="features">
+        <h2>مزايا القالب</h2>
+        <p>تم إعداد القالب ليكون متوافقًا مع أفضل الممارسات الأساسية:</p>
+        <ol>
+          <li>علامة <code>&lt;title&gt;</code> واضحة وملائمة.</li>
+          <li>وصف <code>meta description</code> موجز ويعكس المحتوى.</li>
+          <li>روابط <em>Open Graph</em> و <em>Twitter Cards</em> للمشاركة.</li>
+          <li>وسم <code>canonical</code> لمنع التكرار.</li>
+          <li>بيانات منظَّمة: <em>WebSite</em> و <em>WebPage</em> و <em>FAQ</em> و <em>Breadcrumb</em>.</li>
+        </ol>
+      </article>
+
+      <article class="card" id="instructions">
+        <h2>طريقة الاستخدام السريعة</h2>
+        <ol>
+          <li>احفظ الملف باسم <strong>index.html</strong>.</li>
+          <li>استبدل <code>https://example.com/</code> بنطاقك الحقيقي، وعدِّل العنوان والوصف.</li>
+          <li>ارفع الملف إلى الاستضافة أو GitHub Pages أو أي استضافة ساكنة.</li>
+          <li>أنشئ خريطة موقع <em>sitemap.xml</em> وملف <em>robots.txt</em> (اختياري لكن مفيد).</li>
+          <li>أضف موقعك في <strong>Google Search Console</strong> ثم اطلب فهرسة URL.</li>
+        </ol>
+      </article>
+
+      <article class="card faq" id="faq">
+        <h2>الأسئلة الشائعة</h2>
+        <details>
+          <summary>هل يكفي هذا القالب للظهور في جوجل؟</summary>
+          <p>القالب يوفّر الأساسيات فقط. ظهورك يعتمد على محتوى ذي قيمة وروابط داخلية وخارجية وجودة تجربة المستخدم.</p>
+        </details>
+        <details>
+          <summary>متى ستظهر الصفحة في النتائج؟</summary>
+          <p>بعد طلب الفهرسة قد يستغرق الأمر بعض الوقت حتى تتم المعالجة؛ لا يوجد وقت ثابت لذلك.</p>
+        </details>
+      </article>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>تواصل</h2>
+      <p>هذا مثال لقسم تواصل بسيط. يمكنك استبداله بنموذج فعلي أو بريد إلكتروني.</p>
+      <p>البريد: <a href="mailto:info@example.com">info@example.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="year"></span> موقع تجريبي. كل الحقوق محفوظة.</small>
+    <noscript>يعمل هذا الموقع بدون جافاسكريبت، لكن بعض التأثيرات قد لا تظهر.</noscript>
+  </footer>
+
+  <script>
+    // تحديث السنة تلقائيًا
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
