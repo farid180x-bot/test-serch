@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>من نحن — موقع تجريبي</title>
+  <meta name="description" content="صفحة "من نحن" لموقع تجريبي — نص تعريفي قصير لاختبار الأرشفة وبيانات المنظمة." />
+  <link rel="canonical" href="https://example.com/about" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- اجتماعي -->
+  <meta property="og:title" content="من نحن — موقع تجريبي" />
+  <meta property="og:description" content="تعرف على المهمة والرؤية لفريق الموقع التجريبي." />
+  <meta property="og:url" content="https://example.com/about" />
+  <meta property="og:image" content="https://example.com/about-og.jpg" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#ffffff; --muted:#374151; --accent:#0ea5a4 }
+    body{ margin:0; font-family:'Tajawal', system-ui, -apple-system, 'Segoe UI', Roboto, Arial; color:var(--muted); background:#f7fafc }
+    .wrap{ max-width:960px; margin:2rem auto; padding:1rem }
+    header{ background:#fff; padding:1.25rem; border-radius:12px; box-shadow:0 6px 20px rgba(2,6,23,.06) }
+    h1{ margin:0; font-size:1.6rem }
+    .lead{ margin:.5rem 0 1rem; color:#6b7280 }
+    .card{ background:#fff; padding:1.25rem; border-radius:12px; box-shadow:0 6px 20px rgba(2,6,23,.04); margin-top:1rem }
+    footer{ text-align:center; color:#9ca3af; margin-top:1.25rem }
+    a{ color:var(--accent); text-decoration:none }
+    .meta{ display:flex; gap:1rem; flex-wrap:wrap; font-size:.95rem }
+    .grid{ display:grid; grid-template-columns:1fr 320px; gap:1rem }
+    @media (max-width:820px){ .grid{ grid-template-columns:1fr } }
+  </style>
+
+  <!-- Schema.org: Organization + WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"موقع تجريبي",
+    "url":"https://example.com/",
+    "logo":"https://example.com/logo.png",
+    "sameAs":["https://twitter.com/example","https://www.facebook.com/example"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "url":"https://example.com/about",
+    "name":"من نحن — موقع تجريبي",
+    "inLanguage":"ar",
+    "description":"صفحة "من نحن" لموقع تجريبي تعرض مهمة الموقع وفريقه وروابط الاتصال.",
+    "breadcrumb": { "@id": "https://example.com/#breadcrumb" }
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="meta"><a href="/">الرئيسية</a> › <span>من نحن</span></div>
+      <h1>من نحن</h1>
+      <p class="lead">مرحبًا بك في الصفحة التعريفية للموقع التجريبي — صفحة بسيطة لاختبار الفهرسة والمحتوى التعريفي.</p>
+    </header>
+
+    <main class="grid">
+      <section>
+        <article class="card">
+          <h2>مهمتنا</h2>
+          <p>نهدف إلى إنشاء صفحات ويب بسيطة وسليمة تقنيًا لتجربة الأرشفة والنتائج الغنية في محركات البحث. هذه الصفحة تُظهر عناصر مُنظَّمة وسجل نشأة مختصر.</p>
+
+          <h2>فريق العمل</h2>
+          <p>فريق تجريبي مكوّن من مطوّري محتوى ومصممين ومسؤولين عن السيو. يمكن استبدال هذا النص بمعلومات حقيقية عن مؤسستك.</p>
+
+          <h2>العنوان</h2>
+          <p>شارع الاختبار 10، المدينة التجريبية، البلد.</p>
+
+          <h2>اتصل بنا</h2>
+          <p>البريد: <a href="mailto:info@example.com">info@example.com</a></p>
+        </article>
+
+        <article class="card" style="margin-top:1rem">
+          <h2>نصائح للنشر</h2>
+          <ul>
+            <li>أضف صفحة "من نحن" حقيقية تحتوي على معلومات اتصال ومهمة واضحة.</li>
+            <li>استخدم بيانات منظَّمة للكيان (Organization) وخريطة موقع.</li>
+            <li>اربط هذه الصفحة من قائمة التنقل حتى تُسهّل عثور عناكب البحث عليها.</li>
+          </ul>
+        </article>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3>معلومات تقنية</h3>
+          <p><strong>Canonical:</strong> https://example.com/about</p>
+          <p><strong>Robots:</strong> index, follow</p>
+          <p><strong>اللغة:</strong> Arabic (ar)</p>
+        </div>
+
+        <div class="card" style="margin-top:1rem">
+          <h3>الأسئلة السريعة</h3>
+          <p><strong>هل يجب أن أضع اسم حقيقي؟</strong><br>من الأفضل أن تكون معلوماتك حقيقية لزيادة الثقة والمصداقية.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <small>© <span id="year">2025</span> موقع تجريبي.</small>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
